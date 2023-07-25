@@ -484,27 +484,27 @@ color: #32f50b;
 }
 
 #newsletter input{
-  height: 3.125rem;
+  height: 2.8rem;
   padding: 0 1.25px;
   font-size: 14px;
-  width: 40%;
+  width: 37%;
   border: 2px solid #e9fc41;
-  border-top-left-radius: 30px;
+  border-top-left-radius: 25px;
   outline: none;
   transition: 1s ease;
   margin-left: 30%;}
 
 #newsletter input:hover{
-  width: 55%;
+  width: 50%;
 }
 
 .form button{
-  height: 3.125rem;
+  height: 2.8rem;
   /* margin-top: 10px; */
   background-color: transparent;
   border: 2px solid white;
   color: #cce7d0;
-  border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 25px;
   /* padding: 6px 10px; */
   cursor: pointer;
   font-weight: 650;
@@ -520,6 +520,10 @@ color: #32f50b;
 #newsletter .form{
   display: flex;
   width: 40%;
+}
+
+#form1{
+  display: none;
 }
 
 footer {
@@ -862,11 +866,12 @@ margin-right: 50px;
 #form1 {
   display: flex;
   margin-left: 70px;
-  
+
   /* align-items: center; Optional: To vertically center the form and button */
 }
 
 #form1 input {
+  position: relative;
   display: flex;
   height: 1.8rem;
   padding: 0px;
