@@ -95,6 +95,7 @@ body {
     left: 0;
 }
 
+
 #navbar{
     display: flex;
     align-items: center;
@@ -842,11 +843,59 @@ margin-right: 50px;
  }
  #newsletter{
   padding: 40px 20px;
+ 
  }
- #newsletter.form{
-  width: 100%;
-   
+
+ #newsletter input{
+  display: none;
  }
+ /* #newsletter.newinput input{
+
+ width: 100%;
+ margin-left: 0;
+
+} */
+.form button{
+  display: none;
+}
+/* Apply flex display to the container that wraps form and button */
+#form1 {
+  display: flex;
+  margin-left: 70px;
+  
+  /* align-items: center; Optional: To vertically center the form and button */
+}
+
+#form1 input {
+  display: flex;
+  height: 1.8rem;
+  padding: 0px;
+  font-size: 10px;
+  width: 90px;
+  border: 1px solid #e9fc41;
+  border-top-left-radius: 10px;
+  outline: none;
+  transition: 1s ease;
+  margin-left: 40%;
+  margin-top: 0px;
+}
+
+#form1 input:hover{
+  width: 120px;
+}
+
+#form1 button {
+  border: 1px solid #e9fc41;
+  margin-left: 0px; /* Adjust this value as needed to create space between input and button */
+  font-size: 10px;
+  padding: 0px 15px;
+  width: 90px;
+  border-bottom-right-radius: 10px;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
  #copyright{
   text-align: center;
