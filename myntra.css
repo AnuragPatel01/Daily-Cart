@@ -197,16 +197,18 @@ flex-wrap: wrap;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(192, 190, 190, 0.3);
-border-radius: 8px;
-border: 1px solid #cce7d0;
-margin: 15px 0;
-transition: .5s ease;
+    border-radius: 8px;
+    border: 1px solid #cce7d0;
+    margin: 15px 0;
+transition: .2s ease;
 }
 
 #feature .fe-box:hover{
 /* box-shadow: 10px 10px 54px #f7e703; */
 box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.35);
 }
+
+
 #feature .fe-box img{
     width: 100%;
     margin-bottom: 10px;
@@ -221,10 +223,17 @@ box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.35);
     background-color: #fddde4;
 }
   
+#feature .fe-box h6:hover{
+  color: #1a1a1a;
+  cursor: pointer;
+  
+}
 #feature .fe-box:nth-child(2) h6{
     background-color: #cdebbc;
     
 }
+#feature .fe-box:nth-child(n) h6:hover{
+  background-color: #d9ff04;}
 
 #feature .fe-box:nth-child(3) h6{
     background-color: #d1e8f2;
@@ -930,19 +939,8 @@ background-size: cover;
 background-position: center center;
 }
 
-#abouthead{
-  display: flex;
-  
-  flex-wrap: wrap;
-  
-  /* justify-content: center; */
-}
+/* justify-content: center; */
 
-#abouthead p,
-#abouthead h2{
-  margin-left: 200px;
-  
-}
 
 #page-header.aboutheader h2{
   color: white;
@@ -956,12 +954,53 @@ background-position: center center;
   display: flex;
   justify-content: center;
 }
-#abouthead img{
-  height: 40vh;
-  width: 80vh;
+#about-head{
   display: flex;
-  justify-content: center;
   align-items: center;
-  
+}
+#about-head img{
+width: 350%;
+height: auto;
+margin-left: 5px;
 }
 
+#about-head div{
+  padding-left: 40px;
+}
+
+
+#about-app{
+  text-align: center;
+
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#about-app .video{
+width: 70%;
+height: 100%;
+margin: 30px auto 0 auto; 
+}
+
+/* Media query for small screen devices  */
+/* About Page */
+@media (max-width: 477px) {
+  #about-head{
+    flex-direction: column;
+  }
+  #about-head img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0px;
+  }
+
+  #about-app .video{
+    width: 100%;
+  }
+}
