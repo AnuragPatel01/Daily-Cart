@@ -45,6 +45,7 @@ p {
   padding: 40px 80px;
 }
 
+
 button.normal{
   /* font-size: 14px;
   font-weight: 600;
@@ -78,6 +79,88 @@ button.normal:hover{
 
 body {
   width: 100%;
+}
+
+/* Login Page */
+
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./img/login/log3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+} */
+
+.login-container {
+  background-image: url(./img/login/log3.jpg);
+  background-size: cover;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 20px;
+  height: 80%;
+  width: 30%;
+}
+
+h2 {
+  margin: 30px 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none; /* Remove the default border */
+  outline: none;
+  border-radius: 0; 
+  background-color: transparent; 
+  color: #f0308a; 
+  border-bottom: 1px solid #f8f7f7; 
+  width: 70%; 
+  margin-left: 10%; 
+
+}
+
+/* #username ::placeholder */
+
+#username,
+#password{
+font-size:16px ;
+margin-top: 50px;
+
+}
+
+#username:hover,
+#password:hover{
+color: white;
+font-weight: 650;
+}
+
+.text span{
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+}
+
+input[type="submit"] {
+  background-color: #f0308a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #301741;
 }
 
 /* Header*/

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyCart</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+
+    <link rel="stylesheet" href="myntra.css">
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./img/login/log3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.login-container {
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 20px;
+  height: 90%;
+  width: 30%;
+}
+
+h2 {
+    margin: 30px 30px;
+    color: #f0308a;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none; /* Remove the default border */
+  outline: none;
+  border-radius: 0; 
+  background-color: transparent; 
+  color: #e0e414; 
+  border-bottom: 1px solid #f8f7f7; 
+  width: 50%; 
+  margin-left: 10%; 
+
+}
+
+/* #username ::placeholder */
+
+#username,
+#password{
+font-size:16px ;
+margin-top: 50px;
+
+
+}
+
+#username:hover,
+#password:hover{
+color: rgb(255, 255, 255);
+font-weight: 650;
+}
+
+.text span{
+  display: flex;
+  justify-content: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="submit"] {
+  background-color: #f0308a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45205e;
+  font-weight: 600;
+}
+
+#login-form label{
+    margin-top: 20px;
+    color: #f8f7f7;
+    font-weight: 600;
+}
+
+/* icons */
+
+.login-icons{
+    margin-top: 45px;
+}
+
+#facebook{
+    padding: 12px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    margin: 0 10px;
+    color: #ccc;
+}
+
+#facebook:hover{
+    color: #0A2351;
+    background-color: white;
+    
+}
+
+#google{
+    padding: 15px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    color: white;
+    margin: 0 10px;
+}
+
+#google:hover{
+    background-image: linear-gradient(to right, #FF0000, #FFD500, #00A84C, #4285F4);
+    color: #7a0808;
+}
+
+#twitter{
+    padding: 13px 12px;
+    border-radius: 23px;
+    margin: 0 10px;
+    color: white;
+    border: 1px solid #f8f7f7;
+}
+
+#twitter:hover{
+    color: #1DA1F2;
+    background-color: white;
+
+}
+
+</style>
+</head>
+<body>
+
+    
+    <section class="login-container">
+        <div>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required placeholder="Enter your username"><br>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" required placeholder="Enter your password"><br>
+    
+          <input type="submit" value="Login">
+        </form>
+      </div>
+
+      <div class="text">
+      <span>Forgot your password?</span>
+      <p>Or sign up using</p>
+
+    </div>
+
+      <div class="login-icons">
+        <i id="facebook" class="fab fa-facebook-f"></i>
+        <i id="google" class="fab fa-google"></i>
+        <i id="twitter" class="fab fa-twitter"></i>
+      </div>
+
+      </section>
+      <script src="myntra.js"></script>
+</body>
+
+</html>

@@ -13,3 +13,20 @@ if (close){
         nav.classList.remove('active');
     })
 }
+
+// script.js
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+  
+    
+    if (username === 'anuragpatel' && password === '123456') {
+      window.location.href = '/index.html';
+    } else {
+      alert('Invalid username or password. Please try again.');
+    }
+  });
+  
