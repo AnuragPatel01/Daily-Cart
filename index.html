@@ -17,7 +17,7 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url(./img/login/log3.jpg);
+  background-image: url(./img/login/log5.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -33,6 +33,12 @@
   border-radius: 20px;
   height: 90%;
   width: 30%;
+  transition: .3s ease;
+}
+
+.login-container:hover{
+  box-shadow: -3px 3px 5px gray;
+
 }
 
 h2 {
@@ -95,7 +101,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #331547;
+  background-color: #801a80;
   font-weight: 600;
 }
 
@@ -109,6 +115,7 @@ input[type="submit"]:hover {
 
 .login-icons{
     margin-top: 45px;
+    
 }
 
 #facebook{
@@ -116,41 +123,32 @@ input[type="submit"]:hover {
     border: 1px solid #f8f7f7;
     border-radius: 23px;
     margin: 0 10px;
-    color: #ccc;
-}
-
-#facebook:hover{
+    /* color: #ccc; */cursor: pointer;
     color: #0A2351;
     background-color: white;
-    
 }
 
 #google{
     padding: 15px 15px;
     border: 1px solid #f8f7f7;
     border-radius: 23px;
-    color: white;
+    background-image: linear-gradient(135deg, #FF0000, #FFD500, #00A84C, #4285F4);
+    color: #fdfcfc;
     margin: 0 10px;
+    cursor: pointer;
 }
 
-#google:hover{
-    background-image: linear-gradient(to right, #FF0000, #FFD500, #00A84C, #4285F4);
-    color: #7a0808;
-}
 
 #twitter{
     padding: 13px 12px;
     border-radius: 23px;
     margin: 0 10px;
-    color: white;
     border: 1px solid #f8f7f7;
-}
-
-#twitter:hover{
     color: #1DA1F2;
     background-color: white;
-
+    cursor: pointer;
 }
+
 
 @media screen and (max-width: 799px) {
 
@@ -158,8 +156,9 @@ input[type="submit"]:hover {
 .login-container{
     border-radius: 55px;
     height: 70%;
+    box-shadow: -3px 3px 5px gray;
     width: 74%;}
-
+  
 input::placeholder {
 font-size: 10px;
 }

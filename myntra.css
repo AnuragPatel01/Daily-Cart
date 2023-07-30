@@ -68,9 +68,15 @@ button.normal{
   right: 10px;
   border: none;
   cursor: pointer;
+  transform: translateX(-50%) translateY(100px);
+  opacity: 0;
 }
 button.normal:hover{
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateX(-50%);
   background: rgb(243, 181, 25);
+
 }
 
 .section-m1 {
@@ -331,6 +337,7 @@ box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.35);
   right: 10px;
   border: none;
   cursor: pointer;
+  
 }
 
 #product1 button:hover{
@@ -768,6 +775,7 @@ margin-right: 50px;
   
 }
 
+
 @media screen and (max-width: 799px) {
 
   #navbar{
@@ -1009,3 +1017,6 @@ margin: 30px auto 0 auto;
     width: 100%;
   }
 }
+
+/* CART  */
+
