@@ -24,7 +24,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   
     
     if (username === 'anuragpatel' && password === '123456') {
-      window.location.href = '/index.html';
+      window.location.href = '/dailycart.html';
     } else {
       alert('Invalid username or password. Please try again.');
     }
