@@ -547,6 +547,8 @@ color: #32f50b;
   display: none;
 }
 
+/* footer  */
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -560,7 +562,7 @@ footer .col {
   margin-bottom: 20px;
 }
 
-footer.logo {
+footer .logo {
   margin-bottom: 30px;
 }
 
@@ -594,12 +596,17 @@ footer.install img{
  margin: 10px 0 15px 0;
 }
 
+#row{
+  display: flex;
+  justify-content: center;
+}
+
 footer .install .row img{
   border: 1px solid #d3e90d;
   border-radius: 6px;
 }
 footer .install .row img:hover{
-  border: 2px solid #2bb80f;
+  border: 1px solid #2bb80f;
 }
 
 footer .install img{
@@ -774,6 +781,158 @@ margin-right: 50px;
   justify-content: top;
   
 }
+
+/* CART  */
+
+#cart{
+  overflow-x: auto;
+}
+
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img{
+  width: 70px;
+}
+
+#cart table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+
+}
+
+#cart table td:nth-child(2){
+  width: 150px;
+  text-align: center;
+  
+}
+
+#cart table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+  
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width: 150px;
+  text-align: center;
+  
+}
+
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+
+}
+
+#cart table thead{
+  border: 1px solid rgb(194, 191, 191);
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td{
+  padding-top: 15px;
+}
+
+#cart table tbody td{
+  font-size: 13px;
+}
+
+
+#cart-add{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+#coupon{
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+
+}
+
+#coupon input{
+  padding: 10px 20px;
+  outline: none;
+  width: 50%;
+  margin-right: 10px;
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 5px;
+}
+
+#coupon button{
+  background-color: rgb(255, 217, 0);
+  /* color: white; */
+  padding: 10px 15px;
+  border: 1px solid rgb(194, 191, 191);
+  font-weight: 550;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#coupon button:hover{
+  background-color: #24b407;
+  color: white;
+}
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid rgb(194, 191, 191) ;
+  padding: 30px;
+  border-radius: 10px ;
+}
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid rgb(194, 191, 191);
+  padding: 10px;
+  font-size: 13px;
+}
+
+#checkout button{
+ border: 1px solid rgb(194, 191, 191);
+ padding: 12px 15px;
+ border-radius: 5px;
+ background-color: rgb(255, 217, 0) ;
+ font-weight: 500;
+ font-size: 15px;
+ cursor: pointer;
+}
+
+#checkout button:hover{
+  background-color: #24b407;
+  color: white;
+}
+
 
 
 @media screen and (max-width: 799px) {
@@ -972,9 +1131,13 @@ background-position: center center;
   align-items: center;
 }
 #about-head img{
-width: 350%;
+width: 500px;
 height: auto;
 margin-left: 5px;
+}
+
+#about-head h3{
+  font-size: 35px;
 }
 
 #about-head div{
@@ -987,6 +1150,10 @@ margin-left: 5px;
 
 }
 
+#about-app a{
+  text-decoration: none;
+}
+
 #about-app .video video{
   width: 100%;
   height: 100%;
@@ -996,6 +1163,9 @@ margin-left: 5px;
 width: 70%;
 height: 100%;
 margin: 30px auto 0 auto; 
+
+/* cart page  */
+
 }
 
 /* Media query for small screen devices  */
@@ -1016,7 +1186,50 @@ margin: 30px auto 0 auto;
   #about-app .video{
     width: 100%;
   }
+
+/* CART PAGE */
+
+#cart-add{
+  flex-direction: column;
+}
+#coupon{
+  width: 100%;
 }
 
-/* CART  */
+#subtotal { 
+width: 100%;
+padding:20px;
+}
+
+#checkout button{
+  font-size: 10px;
+  padding: 8px 10px;
+  font-weight: 550;
+  border-radius: 4px;
+}
+
+#coupon input{
+  padding: 5px 15px;
+  outline: none;
+  width: 45%;
+  margin-right: 10px;
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 5px;
+}
+
+#coupon input::placeholder{
+  font-size: 10px;
+}
+
+#coupon button{
+  background-color: rgb(255, 217, 0);
+  /* color: white; */
+  padding: 7px 10px;
+  border: 1px solid rgb(194, 191, 191);
+  font-weight: 550;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 10px;
+}
+}
 
