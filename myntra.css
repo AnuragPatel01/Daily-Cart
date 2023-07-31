@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #e9fc41;
+    background: #e4fd06;
     /* #E3E6F3; */
     box-shadow: 0px 5px 15px rgba(114, 113, 113, 0.6);
     z-index: 999;
@@ -167,6 +167,7 @@ color: #1c9105;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
+  
 padding: 0 80px;
 display: flex;
 flex-direction: column;
@@ -785,8 +786,16 @@ margin-right: 50px;
 /* CART  */
 
 #page-header.cartimage{
-background-image: url(/img/hero4.png);
-background-position-y: center;
+background-image: url(/img/cartback.jpg);
+background-position-y: -250%;
+background-size: cover ;
+height: 40vh;
+width: 100%;
+display: flex;
+}
+
+#page-header.cartimage h2{
+  color: white;
 }
 
 #cart{
