@@ -162,7 +162,7 @@ color: #1c9105;
 /* Home Page */
 
 #hero{
-    background-image: url("img/hero4.png");
+    background-image: url("/img/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -784,6 +784,11 @@ margin-right: 50px;
 
 /* CART  */
 
+#page-header.cartimage{
+background-image: url(/img/hero4.png);
+background-position-y: center;
+}
+
 #cart{
   overflow-x: auto;
 }
@@ -1206,7 +1211,7 @@ padding:20px;
   padding: 8px 10px;
   font-weight: 550;
   border-radius: 4px;
-  
+
 }
 
 #coupon input{
