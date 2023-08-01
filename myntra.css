@@ -162,7 +162,7 @@ color: #1c9105;
 /* Home Page */
 
 #hero{
-    background-image: url("/img/hero4.png");
+    background-image: url("img/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -786,7 +786,7 @@ margin-right: 50px;
 /* CART  */
 
 #page-header.cartimage{
-background-image: url(/img/cartback.jpg);
+background-image: url(img/cartback.jpg);
 background-position-y: -250%;
 background-size: cover ;
 height: 40vh;
