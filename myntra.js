@@ -24,8 +24,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   
     
     if (username === 'anuragpatel' && password === '123456') {
-      window.history.pushState({page:"newPage"},"Myntra","/myntra.html")
-      location.reload()
+      window.location.href = '/Daily-Cart/myntra.html';
     } else {
       alert('Invalid username or password. Please try again.');
     }
