@@ -26,21 +26,22 @@
         }
 
         // Handle login form submission
+        
         if (loginForm) {
-            loginForm.addEventListener('submit', (event) => {
-                event.preventDefault();
+          loginForm.addEventListener('submit', (event) => {
+              event.preventDefault();
 
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
+              const username = document.getElementById('username').value;
+              const password = document.getElementById('password').value;
 
-                if (username === 'anuragpatel' && password === '123456') {
-                    // Simulate successful login by displaying a message
-                    errorMessage.textContent = 'Login successful. Redirecting...';
-                    setTimeout(() => {
-                        window.location.href = '/index.html'; // Redirect after a delay
-                    }, 2000); // Delay in milliseconds
-                } else {
-                    errorMessage.textContent = 'Invalid username or password. Please try again.';
-                }
+              if (username === 'anuragpatel' && password === '123456') {
+                  // Simulate successful login by displaying a message
+                  errorMessage.textContent = 'Login successful. Redirecting...';
+                  setTimeout(() => {
+                      window.location.href = '/index.html'; // Redirect after a delay
+                  }, 2000); // Delay in milliseconds
+              } else {
+                  errorMessage.textContent = 'Invalid username or password. Please try again.';
+              }
             });
         }
