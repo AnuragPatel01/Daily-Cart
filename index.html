@@ -10,521 +10,232 @@
 
 
     <link rel="stylesheet" href="myntra.css">
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./img/login/log3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 
+}
+
+.login-container {
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 20px;
+  height: 90%;
+  width: 30%;
+  transition: .3s ease;
+}
+
+h2 {
+    margin: 30px 30px;
+    color: #f0308a;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none; /* Remove the default border */
+  outline: none;
+  border-radius: 0; 
+  background-color: transparent; 
+  color: #a1055b; 
+  font-weight: 550;
+  border-bottom: 1px solid #f8f7f7; 
+  width: 50%; 
+  margin-left: 10%; 
+
+}
+
+/* #username ::placeholder */
+
+#username,
+#password{
+font-size:16px ;
+margin-top: 50px;
+
+}
+
+input::placeholder {
+font-size: 14px;
+color: #fffdfe;
+}
+
+#username:hover,
+#password:hover{
+color: rgb(255, 255, 255);
+font-weight: 700;
+}
+
+.text span{
+  display: flex;
+  justify-content: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #f0308a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #801a80;
+  font-weight: 600;
+}
+
+#login-form label{
+    margin-top: 20px;
+    color: #f8f7f7;
+    font-weight: 600;
+}
+
+/* icons */
+
+.login-icons{
+    margin-top: 45px;
+    
+}
+
+#facebook{
+    padding: 12px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    margin: 0 10px;
+    /* color: #ccc; */cursor: pointer;
+    color: #0A2351;
+    background-color: white;
+}
+
+#google{
+    padding: 15px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    background-image: linear-gradient(135deg, #FF0000, #FFD500, #00A84C, #4285F4);
+    color: #fdfcfc;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+#twitter{
+    padding: 13px 12px;
+    border-radius: 23px;
+    margin: 0 10px;
+    border: 1px solid #f8f7f7;
+    color: #1DA1F2;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 799px) {
+
+body{
+  background-size: cover;
+    background-position-x: center;
+}
+
+.login-container{
+    border-radius: 55px;
+    height: 70%;
+    /* box-shadow: -3px 3px 5px gray; */
+    
+    width: 74%;}
+  
+input::placeholder {
+font-size: 10px;
+}
+
+#login-icons{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+#facebook{
+    padding: 12px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    margin: 0 10px;
+    color: #ccc;
+    color: #0A2351;
+    background-color: white;
+}
+
+#google{
+    padding: 15px 15px;
+    border: 1px solid #f8f7f7;
+    border-radius: 23px;
+    margin: 0 10px;
+    background-image: linear-gradient(135deg, #FF0000, #FFD500, #00A84C, #4285F4);
+    color: #7a0808;
+}
+
+#twitter{
+    padding: 13px 12px;
+    border-radius: 23px;
+    margin: 0 10px;
+    border: 1px solid #f8f7f7;
+    color: #1DA1F2;
+    background-color: white;
+}
+.text span{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: white;
+}
+}
+</style>
 </head>
 <body>
-    
-
-<section id="header">
-<a href="#"><img src="./img/logo.png" class="logo" alt="Image currently not available"></a>
-
-<div>
-    <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-           <!-- <li><a href="contacts.html">Contact</a></li> -->
-        <li id="lg-bag"><a href="cart.html" id="cart"><i class="fas fa-shopping-bag" style="color: #0e0d0d;"></i></a></li>
-
-        <li id="loginTab"><a href="login.html" id="login">Login</a></li>
-        <li id="logoutTab"><a href="#" id="logout">Logout</a></li>
-        <a href="#" id="close" > <i class="fas fa-times" style="color: #0e0d0d;"></i></a>
-    </ul>
-</div>
-
-<div id="mobile">
-    <a href="cart.html"><i class="fas fa-shopping-bag" style="color: #0e0d0d;"></i></a>
-    <i id="bar" class="fas fa-outdent"></i>
-</div>
-</section>
-
-<section id="hero">
-    <h4>Trade-in-offer</h4>
-    <h2>Super value deals</h2>
-    <h1> On all products </h1>
-    <p>Save more with coupons & up to 70% off! </p>
-    <button>Shop Now</button>
-
-</section>
-
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="img/features/f1.png">
-        <h6>Free Shipping</h6>
-    </div>
-
-    <div class="fe-box">
-        <img src="img/features/f2.png">
-        <h6>Online Order</h6>
-    </div>
-
-    <div class="fe-box">
-        <img src="img/features/f3.png">
-        <h6>Save Money</h6>
-    </div>
-
-    <div class="fe-box">
-        <img src="img/features/f4.png">
-        <h6>Promotions</h6>
-    </div>
-
-
-    <div class="fe-box">
-        <img src="img/features/f5.png">
-        <h6>Happy Sell</h6>
-    </div>
-
-    <div class="fe-box">
-        <img src="img/features/f6.png">
-        <h6>Support</h6>
-    </div>
 
     
-    </div>
-
-</section>
-
-<section id="product1" class="section-p1">
-    <h2>Featured Products</h2>
-    <p>Summer Collection New Modern Design</p>
-    <div class="pro-container">
-        <div class="pro">
-            <img src="img/products/f1.jpg" alt="">
-            <div class="des">
-                <span>adidas</span>
-                <h5>Astronaut T-shirt</h5>
-                <div class="star">
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    
-                </div>
-                <h4>Price: &#8377;350
-                </h4>
-            </div>
-           
-    <a href="#"><button>Add To Cart</button></a>
-
-</div>
-<div class="pro">
-    <img src="img/products/f2.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;399
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f3.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;299
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f4.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;399
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f5.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;299
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f6.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;449
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f7.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Sweat Pant</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;199
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/f8.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Top</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;249
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
+    <section class="login-container">
+        <div>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required placeholder="Enter your username"><br>
     
-</div>
-</section>
-
-<section id="banner" class="section-m1">
-<h4>Repair Services</h4>
-<h2>Up to <span>70% Off</span>- All T-Shirts & Accessories</h2>
-<button class="normal" >Explore More</button>
-</section>
-
-<section id="product1" class="section-p1">
-    <h2>New Arrivals</h2>
-    <p>Summer Collection New Modern Design</p>
-    <div class="pro-container">
-        <div class="pro">
-            <img src="img/products/n1.jpg" alt="">
-            <div class="des">
-                <span>adidas</span>
-                <h5>Astronaut T-shirt</h5>
-                <div class="star">
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    <i class="fas fa-star" ></i>
-                    
-                </div>
-                <h4>Price: &#8377;350
-                </h4>
-            </div>
-           
-    <a href="#"><button>Add To Cart</button></a>
-
-</div>
-<div class="pro">
-    <img src="img/products/n2.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;399
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n3.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;299
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n4.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;399
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n5.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Astronaut T-shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;299
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n6.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>Pant</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;449
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n7.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>T-Shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;199
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
-<div class="pro">
-    <img src="img/products/n8.jpg" alt="">
-    <div class="des">
-        <span>adidas</span>
-        <h5>T-Shirt</h5>
-        <div class="star">
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            <i class="fas fa-star" ></i>
-            
-        </div>
-        <h4>Price: &#8377;249
-        </h4>
-    </div>
-   
-<a href="#"><button>Add To Cart</button></a>
-
-</div>
-
+          <label for="password">Password:</label>
+          <input type="password" id="password" required placeholder="Enter your password"><br>
     
-</div>
-</section>
+          <input type="submit" value="Login">
+        </form>
+      </div>
 
-<section id="sm-banner" class="section-p1">
-<div class="banner-box">
-    <h4>Crazy Deals</h4>
-    <h2>buy 1 get 1 free</h2>
-    <!-- <span><b>The best classic dress is on sale at cara</b></span> -->
-    <button>Learn More</button>
-</div>
-</section>
+      <div class="text">
+      <span>Forgot your password?</span>
+      <p>Or sign up using</p>
 
-<section id="banner3">
-    <div class="banner-box">
-        <h2>SEASONAL SALE</h2>
-        <h3>Winter Collection -50% OFF</h3>
-    </div> 
-
-    <div class="banner-box banner-box2">
-        <h2>T-SHIRTS</h2>
-        <h3>New Trendy Prints</h3>
-    </div> 
-
-    <div class="banner-box banner-box3">
-        <h2>NEW FOOTWEAR COLLECTION</h2>
-        <h3>Spring / Summer 2023</h3>
-    </div> 
-</section>
-
-    <section id="newsletter"  class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-maail updates about our latest shop and 
-               <span>special offers.</span> 
-            </p>
-        </div>
-
-        <div class="form">
-<input type="text" placeholder="Your email address">
-<button>Sign Up</button>
-
-<div id="form1">
-<input type="text" placeholder="Your email address">
-<button>Sign Up</button>
-</div>
-        </div>
-    </section>
-
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="img/logo.png" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> 13th Floor Godrej Colliseum, Sion, Mumbai</p>
-             <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
-            <p><strong>Hours:</strong> 10:00 - 18:30, Mon - Sat</p>
-<div class="follow">
-    <h4>Follow us</h4>
-    <div class="icon">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-pinterest-p"></i>
-        <i class="fab fa-youtube"></i>
     </div>
-</div>
 
-</div>
+      <div id="login-icons">
+        <i id="facebook" class="fab fa-facebook-f"></i>
+        <i id="google" class="fab fa-google"></i>
+        <i id="twitter" class="fab fa-twitter"></i>
+      </div>
 
-
-<div class="col">
-    <h4>About</h4>
-    <a href="#">About us</a>
-    <a href="#">Delivery Information</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Contact Us</a>
-</div>
-
-<div class="col">
-    <h4>My Account</h4>
-    <a href="#">Sign in</a>
-    <a href="#">View Cart</a>
-    <a href="#">My Wishlist</a>
-    <a href="#">Track My Order</a>
-    <a href="#">Help</a>
-</div>
-
-<div class="col install">
-    <h4>Install App</h4>
-    <p>From App Store or Google Play</p>
-    <div class="row">
-        <img src="img/pay/app.jpg" alt="">
-        <img src="img/pay/play.jpg" alt="">
-    </div>
-    <p>Secured Payment Gateways </p>
-    <img src="img/pay/pay.png" alt="">
-</div>
-<div id="copyright">
-    <p>&copy; 2023 Daily Cart. All rights reserved</p>
-</div>
-
-</footer>
-
-
-    <script src="myntra.js"></script>
+      </section>
+      <script src="dailycart.js"></script>
 </body>
+
 </html>
