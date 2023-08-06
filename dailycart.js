@@ -14,6 +14,7 @@ if (close){
     })
 }
 
+
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
   
@@ -21,7 +22,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const password = document.getElementById('password').value;
   
     
-    if (username === 'anuragpatel' && password === '123456') {
+    if (username === 'demo@name' && password === '123456') {
       window.location.href = '/Daily-Cart/home.html';
     } else {
       alert('Invalid username or password. Please try again.');
